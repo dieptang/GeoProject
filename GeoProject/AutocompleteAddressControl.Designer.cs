@@ -40,8 +40,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.AutoComplete = new CustomCompleteTextBox.CustomCompleteTextBox();
-            this.radAutoCompleteBox = new Telerik.WinControls.UI.RadAutoCompleteBox();
-            ((System.ComponentModel.ISupportInitialize)(this.radAutoCompleteBox)).BeginInit();
+          //  this.radAutoCompleteBox = new Telerik.WinControls.UI.RadAutoCompleteBox();
+           // ((System.ComponentModel.ISupportInitialize)(this.radAutoCompleteBox)).BeginInit();
             this.SuspendLayout();
             // 
             // StrNum
@@ -164,21 +164,21 @@
             // 
             // radAutoCompleteBox
             // 
-            this.radAutoCompleteBox.EnableGestures = false;
-            this.radAutoCompleteBox.EnableTheming = false;
-            this.radAutoCompleteBox.Location = new System.Drawing.Point(21, 7);
-            this.radAutoCompleteBox.MaxDropDownItemCount = 10;
-            this.radAutoCompleteBox.Name = "radAutoCompleteBox";
-            this.radAutoCompleteBox.Size = new System.Drawing.Size(516, 26);
-            this.radAutoCompleteBox.TabIndex = 13;
-            this.radAutoCompleteBox.TextChanged += new System.EventHandler(this.radAutoCompleteBox_TextChanged_1);
-            this.radAutoCompleteBox.Leave += new System.EventHandler(this.radAutoCompleteBox_Leave);
+            //this.radAutoCompleteBox.EnableGestures = false;
+            //this.radAutoCompleteBox.EnableTheming = false;
+            //this.radAutoCompleteBox.Location = new System.Drawing.Point(21, 7);
+            //this.radAutoCompleteBox.MaxDropDownItemCount = 10;
+            //this.radAutoCompleteBox.Name = "radAutoCompleteBox";
+            //this.radAutoCompleteBox.Size = new System.Drawing.Size(516, 26);
+            //this.radAutoCompleteBox.TabIndex = 13;
+            //this.radAutoCompleteBox.TextChanged += new System.EventHandler(this.radAutoCompleteBox_TextChanged_1);
+            //this.radAutoCompleteBox.Leave += new System.EventHandler(this.radAutoCompleteBox_Leave);
             // 
             // AutocompleteAddressControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.radAutoCompleteBox);
+          //this.Controls.Add(this.radAutoCompleteBox);
             this.Controls.Add(this.AutoComplete);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -193,7 +193,7 @@
             this.Controls.Add(this.StrNum);
             this.Name = "AutocompleteAddressControl";
             this.Size = new System.Drawing.Size(554, 230);
-            ((System.ComponentModel.ISupportInitialize)(this.radAutoCompleteBox)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.radAutoCompleteBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,6 +213,5 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private CustomCompleteTextBox.CustomCompleteTextBox AutoComplete;
-        private Telerik.WinControls.UI.RadAutoCompleteBox radAutoCompleteBox;
     }
 }

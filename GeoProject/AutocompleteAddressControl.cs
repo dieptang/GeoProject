@@ -21,9 +21,9 @@ namespace GeoProject
             //AutoComplete.DisplayMember = "Name";
             //AutoComplete.ValueMember = "placeid";
 
-            radAutoCompleteBox.AutoCompleteDisplayMember = "Name";
-            radAutoCompleteBox.AutoCompleteValueMember = "placeid";
-            radAutoCompleteBox.AutoCompleteMode = AutoCompleteMode.Suggest;
+          //  radAutoCompleteBox.AutoCompleteDisplayMember = "Name";
+           // radAutoCompleteBox.AutoCompleteValueMember = "placeid";
+           // radAutoCompleteBox.AutoCompleteMode = AutoCompleteMode.Suggest;
             //this.AutoComplete.box.MouseClick += new MouseEventHandler(this.ListBox_MouseClickSelectedItem);
         }
 
@@ -71,17 +71,17 @@ namespace GeoProject
 
         private void radAutoCompleteBox_TextChanged_1(object sender, EventArgs e)
         {
-            var values = GoogleApi.AutoCompletes(radAutoCompleteBox.Text);//.Select (x => x.name);
+           // var values = GoogleApi.AutoCompletes(radAutoCompleteBox.Text);//.Select (x => x.name);
 
-            autoList = values;
-            radAutoCompleteBox.AutoCompleteItems.Clear();
-            radAutoCompleteBox.AutoCompleteItems.AddRange(autoList.Select(x => x.name));
+           // autoList = values;
+           // radAutoCompleteBox.AutoCompleteItems.Clear();
+           // radAutoCompleteBox.AutoCompleteItems.AddRange(autoList.Select(x => x.name));
         }
 
         private void radAutoCompleteBox_Leave(object sender, EventArgs e)
         {
             if (autoList.Count > 0) {
-                var t = radAutoCompleteBox.Text.ToString();
+                //var t = radAutoCompleteBox.Text.ToString();
                 var item = autoList.FirstOrDefault();
                 if (item != null) {
                     var placeid = item.placeid;

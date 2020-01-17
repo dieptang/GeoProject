@@ -11,7 +11,7 @@ namespace GeoProject
 {
     class GoogleApi
     {
-        public static string GooglePlaceAPI = "AIzaSyCiXGygcIaP5Yd4DUBJUzGOCo_ILPBEQAM";
+        public static string GooglePlaceAPI = "GOCo_ILPBEQAM";
 
         protected static string fileGetContents(string fileName)
         {
